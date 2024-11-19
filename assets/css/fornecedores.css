@@ -1,0 +1,84 @@
+.fornecedores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.fornecedores form{
+    width: 100%;
+    padding: 0 15%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.fornecedores .subtitle{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.c1{
+    width: 70%;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.f1{
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.f1 .final{
+    float: left;
+    align-items: left;
+}
+
+.f2{
+    float: left;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.f2 .final{
+    padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .dados .item{
+        margin-left: 1%;
+        width: 96%;
+
+    }
+    
+    .mapa iframe {
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .c1 {
+        width: 90%;
+    }
+
+    .c2{
+        width: 96%;
+ 
+    }
+
+    .f1{
+        width: 100%;
+
+    }
+
+    .fornecedores{
+        margin-left: 12px;
+    }
+}

@@ -1,0 +1,59 @@
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.2rem;
+}
+
+
+.projetos .imagens :hover {
+    margin-top: 3.2rem;
+    
+}
+
+.projetos img {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.projetos img :hover {
+    padding: 1.3rem;
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}
+
+.projetos .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 389px);
+    grid-template-rows: 512px 512px 512px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .projetos .imagens{
+        display: grid;
+        justify-content: center;
+
+    }
+    .projetos .grid {
+        grid-template-columns: 2fr; 
+        grid-template-rows: auto;
+        justify-items: center; 
+        width: 100%; 
+        margin-top: 0;
+
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projetos .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 32rem);
+        grid-template-rows: auto;
+    }
+    .projetos img {
+        max-width: 32rem;
+    }
+}

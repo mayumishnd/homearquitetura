@@ -1,0 +1,61 @@
+.tabela {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+table {
+    margin: auto;
+    width: 100%;
+    max-width: 1253.75px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    height: auto;
+    padding: 15px; 
+    text-align: center; 
+}
+
+.l1 {
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+
+.l2 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 768px) {
+    table {
+        display: block;
+    }
+
+    tr {
+        display: block; 
+        margin-bottom: 1rem; 
+    }
+
+    th, td {
+        display: block; 
+        text-align: left;
+        padding: 10px; 
+    }
+    th{
+        font-size: 2.8rem;
+    }
+    
+    .l1{
+        gap: 60px;
+        display: grid;
+    }
+
+    .l2{
+        gap: 60px;
+        display: grid;
+        margin-top: -255px;
+    }
+}

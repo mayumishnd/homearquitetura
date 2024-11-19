@@ -1,0 +1,60 @@
+.verde{
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
+.verde #meuRetangulo{
+    border-radius: 100px; 
+    background-color: var(--foreground); 
+    position: absolute; 
+    margin-top: -280px;
+    z-index: 2;
+}
+
+.verde .titulo{
+    letter-spacing: 1.4rem;
+    font-size: 1.6rem;
+    color: var(--background);
+    font-weight: bold;
+    z-index: 10;
+    position: relative; 
+    margin-top: 45px;
+    align-items: center;
+}
+
+.verde .subtitulo{
+    font-size: 1.5rem;
+    color: var(--background);
+    z-index: 10;
+    position: relative; 
+    margin-top: 40px;
+    text-align: justify;
+    max-width: 110ch;
+}
+
+@media (max-width: 768px) {
+.verde{
+    margin-top: -5px;
+}
+
+.verde .titulo{
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 0.8rem;
+}
+
+.verde .subtitulo{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.verde #meuRetangulo{
+    margin: 0px;
+    width: 100%;
+    height: 700px;
+    border-radius: 40px; 
+
+}
+
+}

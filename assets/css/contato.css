@@ -1,0 +1,104 @@
+.dados{
+    display: flex;
+    justify-content: center;
+}
+
+.dados .conteudo-dados{
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.cd-item{
+    width: 400px;
+}
+
+.conteudo-dados form{
+    width: 100%;
+}
+
+.dados .mapa{
+    margin: 70px 0 0 0;
+}
+
+.dados .loc,
+.dados .tel,
+.dados .clock{
+    display: inline-flex;
+    margin: 0 0 30px 0
+}
+
+.dados .loc img,
+.dados .tel img,
+.dados .clock img{
+    width: 3rem;
+    height: auto;
+    margin: auto;
+    margin-left: auto;
+}
+
+.dados .textloc,
+.dados .texttel,
+.dados .textclock{
+    font-size: 1.7rem;
+    color: var(--primary);
+    z-index: 10;
+    position: relative; 
+    text-align: justify;
+    max-width: 110ch;
+    margin-top: 4px;
+}
+
+.dados .redes{
+    display: inline-flex;
+    margin: 5px 0 30px 0;
+    margin-left: auto;
+}
+
+.dados .redes img{
+    width: 3rem;
+    height: auto;
+    margin: auto;
+}
+
+
+
+@media (max-width: 768px) {
+    .dados{
+        display: flex;
+        max-width: 768px;
+    }
+    
+    .dados .cd-item{
+        padding: 0 5%;
+        width: 50%;
+    }
+    
+    .dados .enviar{
+        width: 70%;
+        height: 50px;
+        font-size: 16px;
+    }
+    .mapa iframe {
+        width: 100%;
+    }
+
+    .conteudo-dados form{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-dados textarea{
+        width: 100%;
+    }
+
+    .c1, c2{
+        width: 100%;
+    }
+
+}
+
+

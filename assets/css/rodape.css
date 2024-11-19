@@ -1,0 +1,158 @@
+footer{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+footer .rodape{
+    border-radius: 100px 100px 0px 0px;
+    background-color: var(--foreground); 
+    margin-top: 100px;
+    z-index: 2;
+    width: 100%;
+    height: 350px;
+}
+
+.rodape a{
+    display: flex;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.rodape .conteudo-rodape{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 100px ;
+}
+
+.rodape .logo img{
+    width: 32rem;
+    height: auto;
+    margin: auto;
+}
+
+.rodape .loc, .tel, .redes{
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.rodape .textloc, .texttel{
+    font-size: 1.5rem;
+    color: var(--secondary);
+    z-index: 10;
+    position: relative; 
+    text-align: justify;
+    max-width: 110ch;
+    margin-left: 3px;
+}
+
+.rodape .loc img{
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+}
+
+.rodape .tel img{
+    width: 3rem;
+    height: auto;
+    margin: auto;
+}
+
+.rodape .redes img{
+    width: 3rem;
+    height: auto;
+    margin: auto;
+}
+
+.rodape .menu1, .menu2{
+    margin-top: 35px;
+}
+
+.rodape .menu1 a, .menu2 a{
+    color: var(--secondary);
+    padding: 5px;
+}
+
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+
+    footer .rodape{
+        border-radius: 55px 55px 0px 0px;
+        background-color: var(--foreground); 
+        margin-top: 100px;
+        z-index: 2;
+        width: 100%;
+        height: 350px;
+    }
+
+    .item {
+        align-items: center;
+    }
+    footer .rodape {
+        height: auto; 
+        padding: 20px; 
+        margin-top: 0px;
+    }
+
+    .rodape .conteudo-rodape {
+        flex-direction: column;
+        align-items: start; 
+        margin: 0 5%;
+    }
+
+    .rodape .logo img {
+        width: 20rem; 
+        margin-left: 0; 
+    }
+
+    .rodape .loc,
+    .rodape .tel,
+    .rodape .redes {
+        margin: 0; 
+        margin-top: 10px; 
+    }
+
+    .rodape .menu1,
+    .rodape .menu2 {
+        font-size: 1.5rem; 
+        line-height: 30px;
+        margin-top: 10px; 
+
+    }
+
+    .rodape .loc img {
+        margin: 0px;
+    }
+
+    .rodape .tel img{
+        margin: 0px;
+
+    }
+
+    .rodape .item {
+        justify-content: center;
+    }
+}
+
+@media (width>768px) and (max-width: 1024) {
+    footer .rodape {
+        height: auto; 
+        padding: 20px; 
+        margin-top: 0px;
+    }
+    .rodape .conteudo-rodape {
+        display: flex;
+        align-items: center; 
+        width: 100%;
+        margin: 0px;
+    }
+    .item {
+        justify-content: center;
+        
+    }
+
+    .rodape img{
+        margin: 0px;
+    }
+}
